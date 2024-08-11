@@ -37,6 +37,6 @@ The By Races Tab allows users to compare performance by race across two years. U
 
 ![image](https://github.com/user-attachments/assets/1f5bc10a-4a59-4a3f-9461-c9e5436e1492)
 
-## DASH (Coming this week)
-
 The By Special Population Tab enables users to compare performance for additional student populations across two years. Users can select a specific district from the dropdown menu on the upper right. By default, data for all districts is displayed.
+
+## DASH (Coming this week)
