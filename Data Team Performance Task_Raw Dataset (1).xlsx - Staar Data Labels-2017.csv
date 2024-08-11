@@ -1,0 +1,280 @@
+NAME,TYPE,LENGTH,LABEL
+CAMPUS,Character,9,Campus Number
+DISTRICT,Character,6,District Number
+CAD_MATH,Character,1,"Campus 2017: Math Academic Achievement Distinction (1=Yes, 0=No)"
+CAD_POST,Character,1,"Campus 2017: Postsecondary Readiness Distinction (1=Yes, 0=No)"
+CAD_READ,Character,1,"Campus 2017: Reading/ELA Academic Achievement Distinction (1=Yes, 0=No)"
+CAD_SCIE,Character,1,"Campus 2017: Science Academic Achievement Distinction (1=Yes, 0=No)"
+CAD_SOCI,Character,1,"Campus 2017: Social Studies Academic Achievement Distinction (1=Yes, 0=No)"
+CAD_GAP,Character,1,"Campus 2017: Top 25% Closing Performance Gaps (1=Yes, 0=No)"
+CAD_PROGRESS,Character,1,"Campus 2017: Top 25% Student Progress Distinction (1=Yes, 0=No)"
+CAD_CTFLAGMATH,Numeric,8,Campus 2017: Number of Math Distinction Indicators Evaluated
+CAD_CTRANKMATH,Numeric,8,Campus 2017: Number of Math Distinction Indicators in Top Quartile
+CAD_CTFLAGPOST,Numeric,8,Campus 2017: Number of Postsecondary Readiness Distinction Indicators Evaluated
+CAD_CTRANKPOST,Numeric,8,Campus 2017: Number of Postsecondary Readiness Distinction Indicators in Top Quartile
+CAD_CTFLAGREAD,Numeric,8,Campus 2017: Number of Reading/ELA Distinction Indicators Evaluated
+CAD_CTRANKREAD,Numeric,8,Campus 2017: Number of Reading/ELA Distinction Indicators in Top Quartile
+CAD_CTFLAGSCIE,Numeric,8,Campus 2017: Number of Science Distinction Indicators Evaluated
+CAD_CTRANKSCIE,Numeric,8,Campus 2017: Number of Science Distinction Indicators in Top Quartile
+CAD_CTFLAGSOCI,Numeric,8,Campus 2017: Number of Social Studies Distinction Indicators Evaluated
+CAD_CTRANKSOCI,Numeric,8,Campus 2017: Number of Social Studies Distinction Indicators in Top Quartile
+CAD_ALLPCTMATH,Numeric,8,Campus 2017: Percent Math Distinctions in Top Quartile
+CAD_ALLPCTPOST,Numeric,8,Campus 2017: Percent Postsecondary Readiness Distinctions in Top Quartile
+CAD_ALLPCTREAD,Numeric,8,Campus 2017: Percent Reading/ELA Distinctions in Top Quartile
+CAD_ALLPCTSCIE,Numeric,8,Campus 2017: Percent Science Distinctions in Top Quartile
+CAD_ALLPCTSOCI,Numeric,8,Campus 2017: Percent Social Studies Distinctions in Top Quartile
+CAD_CUT,Character,2,Campus 2017: Percentage of Distinction Indicators Required to Achieve Distinction
+RANKPERFACTE,Character,2,Campus 2017: Quartile Outcome - ACT Performance: ELA (Q1=Top Quartile)
+RANKPERFACTM,Character,2,Campus 2017: Quartile Outcome - ACT Performance: Mathematics (Q1=Top Quartile)
+RANKPERFACTI,Character,2,Campus 2017: Quartile Outcome - ACT Performance: Science (Q1=Top Quartile)
+RANKPARTAPIBE,Character,2,Campus 2017: Quartile Outcome - AP/IB Examination Participation: ELA (Q1=Top Quartile)
+RANKPARTAPIBM,Character,2,Campus 2017: Quartile Outcome - AP/IB Examination Participation: Mathematics (Q1=Top Quartile)
+RANKPARTAPIBI,Character,2,Campus 2017: Quartile Outcome - AP/IB Examination Participation: Science (Q1=Top Quartile)
+RANKPARTAPIBO,Character,2,Campus 2017: Quartile Outcome - AP/IB Examination Participation: Social Studies (Q1=Top Quartile)
+RANKPERFAPIBA,Character,2,Campus 2017: Quartile Outcome - AP/IB Examination Performance: Any Subject (Q1=Top Quartile)
+RANKPERFAPIBE,Character,2,Campus 2017: Quartile Outcome - AP/IB Examination Performance: ELA (Q1=Top Quartile)
+RANKPERFAPIBM,Character,2,Campus 2017: Quartile Outcome - AP/IB Examination Performance: Mathematics (Q1=Top Quartile)
+RANKPERFAPIBI,Character,2,Campus 2017: Quartile Outcome - AP/IB Examination Performance: Science (Q1=Top Quartile)
+RANKPERFAPIBO,Character,2,Campus 2017: Quartile Outcome - AP/IB Examination Performance: Social Studies (Q1=Top Quartile)
+RANKADV,Character,2,Campus 2017: Quartile Outcome - Advanced/Dual-Credit Course Completion Rate: Any Subject (Q1=Top Quartile)
+RANKADVE,Character,2,Campus 2017: Quartile Outcome - Advanced/Dual-Credit Course Completion Rate: ELA/Reading (Q1=Top Quartile)
+RANKADVM,Character,2,Campus 2017: Quartile Outcome - Advanced/Dual-Credit Course Completion Rate: Mathematics (Q1=Top Quartile)
+RANKADVC,Character,2,Campus 2017: Quartile Outcome - Advanced/Dual-Credit Course Completion Rate: Science (Q1=Top Quartile)
+RANKADVS,Character,2,Campus 2017: Quartile Outcome - Advanced/Dual-Credit Course Completion Rate: Social Studies (Q1=Top Quartile)
+RANKALG1PT,Character,2,Campus 2017: Quartile Outcome - Algebra I by Grade 8-Participation (Q1=Top Quartile)
+RANKATTEND,Character,2,Campus 2017: Quartile Outcome - Attendance rate (Q1=Top Quartile)
+RANKCTE,Character,2,Campus 2017: Quartile Outcome - CTE-Coherent Sequence Graduates (Q1=Top Quartile)
+RANKCOLRD,Character,2,Campus 2017: Quartile Outcome - College-Ready Graduates (Q1=Top Quartile)
+RANKA1EOC,Character,2,Campus 2017: Quartile Outcome - EOC Algebra I Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKBIEOC,Character,2,Campus 2017: Quartile Outcome - EOC Biology Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKE1EOC,Character,2,Campus 2017: Quartile Outcome - EOC English I Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKE2EOC,Character,2,Campus 2017: Quartile Outcome - EOC English II Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKUSEOC,Character,2,Campus 2017: Quartile Outcome - EOC U.S. History Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKRHSP,Character,2,Campus 2017: Quartile Outcome - Four-Year Longitudinal Graduation Plan Rate (Q1=Top Quartile)
+RANKGRAD4,Character,2,Campus 2017: Quartile Outcome - Four-Year Longitudinal Graduation Rate (Q1=Top Quartile)
+RANKMATH3,Character,2,Campus 2017: Quartile Outcome - Grade 3 Mathematics Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKREAD3,Character,2,Campus 2017: Quartile Outcome - Grade 3 Reading Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKMATH4,Character,2,Campus 2017: Quartile Outcome - Grade 4 Mathematics Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKREAD4,Character,2,Campus 2017: Quartile Outcome - Grade 4 Reading Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKWRITE4,Character,2,Campus 2017: Quartile Outcome - Grade 4 Writing Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKMATH5,Character,2,Campus 2017: Quartile Outcome - Grade 5 Mathematics Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKREAD5,Character,2,Campus 2017: Quartile Outcome - Grade 5 Reading Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKSCI5,Character,2,Campus 2017: Quartile Outcome - Grade 5 Science Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKMATH6,Character,2,Campus 2017: Quartile Outcome - Grade 6 Mathematics Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKREAD6,Character,2,Campus 2017: Quartile Outcome - Grade 6 Reading Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKMATH7,Character,2,Campus 2017: Quartile Outcome - Grade 7 Mathematics Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKREAD7,Character,2,Campus 2017: Quartile Outcome - Grade 7 Reading Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKWRITE7,Character,2,Campus 2017: Quartile Outcome - Grade 7 Writing Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKMATH8,Character,2,Campus 2017: Quartile Outcome - Grade 8 Mathematics Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKREAD8,Character,2,Campus 2017: Quartile Outcome - Grade 8 Reading Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKSCI8,Character,2,Campus 2017: Quartile Outcome - Grade 8 Science Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKSOC8,Character,2,Campus 2017: Quartile Outcome - Grade 8 Social Studies Performance (Masters Grade Level) (Q1=Top Quartile)
+RANKEXGROWTHE,Character,2,Campus 2017: Quartile Outcome - Greater Than Expected Student Growth in ELA/Reading (Q1=Top Quartile)
+RANKEXGROWTHM,Character,2,Campus 2017: Quartile Outcome - Greater Than Expected Student Growth in Mathematics (Q1=Top Quartile)
+RANKLEV2,Character,2,Campus 2017: Quartile Outcome - Index 4 - Percent at STAAR Meets Grade Level Standard (Q1=Top Quartile)
+RANKPERFSATE,Character,2,Campus 2017: Quartile Outcome - SAT Performance: ELA (Q1=Top Quartile)
+RANKPERFSATM,Character,2,Campus 2017: Quartile Outcome - SAT Performance: Mathematics (Q1=Top Quartile)
+RANKPARTSACT,Character,2,Campus 2017: Quartile Outcome - SAT/ACT Participation (Q1=Top Quartile)
+RANKPERFSACT,Character,2,Campus 2017: Quartile Outcome - SAT/ACT Performance (Q1=Top Quartile)
+RHSPQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, 4-Year Longitudinal: Graduation Plan Rate"
+GRAD4Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, 4-Year Longitudinal: Graduation Rate"
+ADVQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Advanced Courses: Grades 11-12, Rate"
+ADVEQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Advanced ELA Courses: Grades 11-12, Rate"
+ADVMQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Advanced Math Courses: Grades 11-12, Rate"
+ADVCQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Advanced Science Courses: Grades 11-12, Rate"
+ADVSQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Advanced Social Studies Courses: Grades 11-12, Rate"
+ALG1PTQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Algebra I % of Participant by Grade 8"
+ATTENDQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Attendance: Rate"
+COLRDQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, College Ready: Both % Ready"
+A1EOCQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, EOC Algebra I - % Masters Grade Level Standard"
+BIEOCQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, EOC Biology - % Masters Grade Level Standard"
+E1EOCQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, EOC English I - % Masters Grade Level Standard"
+E2EOCQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, EOC English II - % Masters Grade Level Standard"
+USEOCQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, EOC US History - % Masters Grade Level Standard"
+MATH3Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 3 Math - % Masters Grade Level Standard"
+READ3Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 3 Reading - % Masters Grade Level Standard"
+MATH4Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 4 Math - % Masters Grade Level Standard"
+READ4Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 4 Reading - % Masters Grade Level Standard"
+WRITE4Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 4 Writing - % Masters Grade Level Standard"
+MATH5Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 5 Math - % Masters Grade Level Standard"
+READ5Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 5 Reading - % Masters Grade Level Standard"
+SCI5Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 5 Science - % Masters Grade Level Standard"
+MATH6Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 6 Math - % Masters Grade Level Standard"
+READ6Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 6 Reading - % Masters Grade Level Standard"
+MATH7Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 7 Math - % Masters Grade Level Standard"
+READ7Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 7 Reading - % Masters Grade Level Standard"
+WRITE7Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 7 Writing - % Masters Grade Level Standard"
+MATH8Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 8 Math - % Masters Grade Level Standard"
+READ8Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 8 Reading - % Masters Grade Level Standard"
+SCI8Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 8 Science - % Masters Grade Level Standard"
+SOC8Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Grade 8 Social Study - % Masters Grade Level Standard"
+CTEQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Graduates: CTE Student Group %"
+EXGROWTHMQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Index 2 % Exceeded Progress Mathematics"
+EXGROWTHEQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Index 2 % Exceeded Progress Reading"
+PARTAPIBEQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Participation, AP/IB: (ELA) % Taking"
+PARTAPIBMQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Participation, AP/IB: (Math) % Taking"
+PARTAPIBIQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Participation, AP/IB: (Science) % Taking"
+PARTAPIBOQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Participation, AP/IB: (Social Studies) % Taking"
+PARTSACTQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Participation, SAT/ACT: % Test-Taking"
+PERFACTEQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Performance, ACT: ACT ELA Average"
+PERFACTMQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Performance, ACT: ACT Math Average"
+PERFACTIQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Performance, ACT: ACT Science Average"
+PERFAPIBAQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Performance, AP/IB: (All Subjects) % Students Above Criterion"
+PERFAPIBEQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Performance, AP/IB: (ELA) % Students Above Criterion"
+PERFAPIBMQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Performance, AP/IB: (Math) % Students Above Criterion"
+PERFAPIBIQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Performance, AP/IB: (Science) % Students Above Criterion"
+PERFAPIBOQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Performance, AP/IB: (Social Studies) % Students Above Criterion"
+PERFSACTQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Performance, SAT/ACT: % Above Criterion"
+PERFSATEQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Performance, SAT: SAT ELA Average"
+PERFSATMQ,Numeric,8,"Campus 2017: Top Quartile Minimum Score, Performance, SAT: SAT Math Average"
+LEV2Q,Numeric,8,"Campus 2017: Top Quartile Minimum Score, STAAR Meets Grade Level: Rate"
+CA0AT16D,Numeric,8,Campus 2016 Attendance: All Students Days Membership
+CA0AT16N,Numeric,8,Campus 2016 Attendance: All Students Days Present
+CA0AT16R,Numeric,8,Campus 2016 Attendance: All Students Rate
+CA0CAA16D,Numeric,8,"Campus 2016 ACT: All Students, ACT # of Examinees-Denominator"
+CA0CAE16R,Numeric,8,"Campus 2016 ACT: All Students, ACT ELA Average"
+CA0CAM16R,Numeric,8,"Campus 2016 ACT: All Students, ACT Math Average"
+CA0CAC16R,Numeric,8,"Campus 2016 ACT: All Students, ACT Science Average"
+CA0CC16R,Numeric,8,"Campus 2016 SAT/ACT: All Students, % Above Criterion"
+CA0CT16R,Numeric,8,"Campus 2016 SAT/ACT: All Students, % Test-Taking"
+CA0CC16N,Numeric,8,"Campus 2016 SAT/ACT: All Students, Above Criterion Count"
+CA0CT16D,Numeric,8,"Campus 2016 SAT/ACT: All Students, Graduate Count"
+CA0CC16D,Numeric,8,"Campus 2016 SAT/ACT: All Students, Test-Takers Count"
+CA0CT16N,Numeric,8,"Campus 2016 SAT/ACT: All Students, Test-Takers Count"
+CA0CSA16D,Numeric,8,"Campus 2016 SAT: All Students, SAT # of Examinees-Denominator"
+CA0CSE16R,Numeric,8,"Campus 2016 SAT: All Students, SAT ELA Average"
+CA0CSM16R,Numeric,8,"Campus 2016 SAT: All Students, SAT Math Average"
+CA0C4X16D,Numeric,8,Campus 2016 4-Year Longitudinal: All Students Denominator
+CARC4X16D,Numeric,8,Campus 2016 4-Year Longitudinal: Diploma Program Graduates for All Students Denominator (excluding FHSP)
+CASC4X16D,Numeric,8,Campus 2016 4-Year Longitudinal: Diploma Program Graduates for All Students Denominator (including FHSP)
+CAGC4X16N,Numeric,8,Campus 2016 4-Year Longitudinal: [Graduates] for All Students Numerator
+CAGC4X16R,Numeric,8,Campus 2016 4-Year Longitudinal: [Graduates] for All Students Rate
+CARC4X16N,Numeric,8,Campus 2016 4-Year Longitudinal: [RHSP/DAP Graduates] for All Students Numerator
+CARC4X16R,Numeric,8,Campus 2016 4-Year Longitudinal: [RHSP/DAP Graduates] for All Students Rate
+CASC4X16N,Numeric,8,Campus 2016 4-Year Longitudinal: [RHSP/DAP or FHSP-E/DLA Graduates] for All Students Numerator
+CASC4X16R,Numeric,8,Campus 2016 4-Year Longitudinal: [RHSP/DAP or FHSP-E/DLA Graduates] for All Students Rate
+CA0BTA16D,Numeric,8,Campus 2016 AP/IB: All Students (All Subjects) # 11th & 12th Graders
+CA0BKA16N,Numeric,8,Campus 2016 AP/IB: All Students (All Subjects) # Students Above Criterion
+CA0BKA16D,Numeric,8,Campus 2016 AP/IB: All Students (All Subjects) # Students Taking
+CA0BKA16R,Numeric,8,Campus 2016 AP/IB: All Students (All Subjects) % Students Above Criterion
+CA0BKE16N,Numeric,8,Campus 2016 AP/IB: All Students (ELA) # Students Above Criterion
+CA0BKE16D,Numeric,8,Campus 2016 AP/IB: All Students (ELA) # Students Taking
+CA0BTE16N,Numeric,8,Campus 2016 AP/IB: All Students (ELA) # Taking
+CA0BKE16R,Numeric,8,Campus 2016 AP/IB: All Students (ELA) % Students Above Criterion
+CA0BTE16R,Numeric,8,Campus 2016 AP/IB: All Students (ELA) % Taking
+CA0BKM16N,Numeric,8,Campus 2016 AP/IB: All Students (Math) # Students Above Criterion
+CA0BKM16D,Numeric,8,Campus 2016 AP/IB: All Students (Math) # Students Taking
+CA0BTM16N,Numeric,8,Campus 2016 AP/IB: All Students (Math) # Taking
+CA0BKM16R,Numeric,8,Campus 2016 AP/IB: All Students (Math) % Students Above Criterion
+CA0BTM16R,Numeric,8,Campus 2016 AP/IB: All Students (Math) % Taking
+CA0BKC16N,Numeric,8,Campus 2016 AP/IB: All Students (Science) # Students Above Criterion
+CA0BKC16D,Numeric,8,Campus 2016 AP/IB: All Students (Science) # Students Taking
+CA0BTC16N,Numeric,8,Campus 2016 AP/IB: All Students (Science) # Taking
+CA0BKC16R,Numeric,8,Campus 2016 AP/IB: All Students (Science) % Students Above Criterion
+CA0BTC16R,Numeric,8,Campus 2016 AP/IB: All Students (Science) % Taking
+CA0BKS16N,Numeric,8,Campus 2016 AP/IB: All Students (Social Studies) # Students Above Criterion
+CA0BKS16D,Numeric,8,Campus 2016 AP/IB: All Students (Social Studies) # Students Taking
+CA0BTS16N,Numeric,8,Campus 2016 AP/IB: All Students (Social Studies) # Taking
+CA0BKS16R,Numeric,8,Campus 2016 AP/IB: All Students (Social Studies) % Students Above Criterion
+CA0BTS16R,Numeric,8,Campus 2016 AP/IB: All Students (Social Studies) % Taking
+CA0AD16D,Numeric,8,"Campus 2016 Advanced Courses: Grades 11-12, All Students Denominator"
+CA0AD16N,Numeric,8,"Campus 2016 Advanced Courses: Grades 11-12, All Students Numerator"
+CA0AD16R,Numeric,8,"Campus 2016 Advanced Courses: Grades 11-12, All Students Rate"
+CA0ADE16D,Numeric,8,"Campus 2016 Advanced ELA Courses: Grades 11-12, All Students Denominator"
+CA0ADE16N,Numeric,8,"Campus 2016 Advanced ELA Courses: Grades 11-12, All Students Numerator"
+CA0ADE16R,Numeric,8,"Campus 2016 Advanced ELA Courses: Grades 11-12, All Students Rate"
+CA0ADM16D,Numeric,8,"Campus 2016 Advanced Math Courses: Grades 11-12, All Students Denominator"
+CA0ADM16N,Numeric,8,"Campus 2016 Advanced Math Courses: Grades 11-12, All Students Numerator"
+CA0ADM16R,Numeric,8,"Campus 2016 Advanced Math Courses: Grades 11-12, All Students Rate"
+CA0ADC16D,Numeric,8,"Campus 2016 Advanced Science Courses: Grades 11-12, All Students Denominator"
+CA0ADC16N,Numeric,8,"Campus 2016 Advanced Science Courses: Grades 11-12, All Students Numerator"
+CA0ADC16R,Numeric,8,"Campus 2016 Advanced Science Courses: Grades 11-12, All Students Rate"
+CA0ADS16D,Numeric,8,"Campus 2016 Advanced Social Studies Courses: Grades 11-12, All Students Denominator"
+CA0ADS16N,Numeric,8,"Campus 2016 Advanced Social Studies Courses: Grades 11-12, All Students Numerator"
+CA0ADS16R,Numeric,8,"Campus 2016 Advanced Social Studies Courses: Grades 11-12, All Students Rate"
+CACRB16R,Numeric,8,Campus 2016 College Ready: All Students Both % Ready
+CACRB16D,Numeric,8,Campus 2016 College Ready: All Students Both Count
+CACRB16N,Numeric,8,Campus 2016 College Ready: All Students Both Ready Status
+CA0GR16N,Numeric,8,Campus 2016 Graduates: All Students Count
+CV0GR16N,Numeric,8,Campus 2016 Graduates: CTE Count
+CV0GR16R,Numeric,8,Campus 2016 Graduates: CTE Student Group %
+CA00A004217N,Numeric,8,Campus 2017 STAAR Meets Grade Level: Number of students meeting Grade Level Standard requirement for Two or More Subjects - All Numerator
+CA00A004217D,Numeric,8,Campus 2017 STAAR Meets Grade Level: Number of students taking a test in Two or More Subjects - All Denominator
+CA00A004217R,Numeric,8,Campus 2017 STAAR Meets Grade Level: Rate of students meeting Grade Level Standard requirement for Two or More Subjects - All Rate
+CA08AA1DT17N,Numeric,8,Campus 2017: Algebra I Number of Participant by Grade 8
+CA08AA1DT17R,Numeric,8,Campus 2017: Algebra I Percent of Participant by Grade 8
+CAA1AMAD317R,Numeric,8,Campus 2017: EOC Algebra I - % Masters Grade Level Standard
+CAA1AMAD317N,Numeric,8,Campus 2017: EOC Algebra I - Number Masters Grade Level Standard
+CAA1AMAD017D,Numeric,8,Campus 2017: EOC Algebra I - Number Taking Algebra I Test
+CABIASCD317R,Numeric,8,Campus 2017: EOC Biology - % Masters Grade Level Standard
+CABIASCD317N,Numeric,8,Campus 2017: EOC Biology - Number Masters Grade Level Standard
+CABIASCD017D,Numeric,8,Campus 2017: EOC Biology - Number Taking Biology Test
+CAE1ARED317R,Numeric,8,Campus 2017: EOC English I - % Masters Grade Level Standard
+CAE1ARED317N,Numeric,8,Campus 2017: EOC English I - Number Masters Grade Level Standard
+CAE1ARED017D,Numeric,8,Campus 2017: EOC English I - Number Taking English I Test
+CAE2ARED317R,Numeric,8,Campus 2017: EOC English II - % Masters Grade Level Standard
+CAE2ARED317N,Numeric,8,Campus 2017: EOC English II - Number Masters Grade Level Standard
+CAE2ARED017D,Numeric,8,Campus 2017: EOC English II - Number Taking English II Test
+CAUSASSD317R,Numeric,8,Campus 2017: EOC US History - % Masters Grade Level Standard
+CAUSASSD317N,Numeric,8,Campus 2017: EOC US History - Number Masters Grade Level Standard
+CAUSASSD017D,Numeric,8,Campus 2017: EOC US History - Number Taking US History Test
+CA08AA1DT17D,Numeric,8,"Campus 2017: Enrollment Count based on CAF, Grade 8 Only"
+CA03AMAD317R,Numeric,8,Campus 2017: Grade 3 Math - % Masters Grade Level Standard
+CA03AMAD317N,Numeric,8,Campus 2017: Grade 3 Math - Number Masters Grade Level Standard
+CA03AMAD017D,Numeric,8,Campus 2017: Grade 3 Math - Number Taking Math Test
+CA03ARED317R,Numeric,8,Campus 2017: Grade 3 Reading - % Masters Grade Level Standard
+CA03ARED317N,Numeric,8,Campus 2017: Grade 3 Reading - Number Masters Grade Level Standard
+CA03ARED017D,Numeric,8,Campus 2017: Grade 3 Reading - Number Taking Reading Test
+CA04AMAD317R,Numeric,8,Campus 2017: Grade 4 Math - % Masters Grade Level Standard
+CA04AMAD317N,Numeric,8,Campus 2017: Grade 4 Math - Number Masters Grade Level Standard
+CA04AMAD017D,Numeric,8,Campus 2017: Grade 4 Math - Number Taking Math Test
+CA04ARED317R,Numeric,8,Campus 2017: Grade 4 Reading - % Masters Grade Level Standard
+CA04ARED317N,Numeric,8,Campus 2017: Grade 4 Reading - Number Masters Grade Level Standard
+CA04ARED017D,Numeric,8,Campus 2017: Grade 4 Reading - Number Taking Reading Test
+CA04AWRD317R,Numeric,8,Campus 2017: Grade 4 Writing - % Masters Grade Level Standard
+CA04AWRD317N,Numeric,8,Campus 2017: Grade 4 Writing - Number Masters Grade Level Standard
+CA04AWRD017D,Numeric,8,Campus 2017: Grade 4 Writing - Number Taking Writing Test
+CA05AMAD317R,Numeric,8,Campus 2017: Grade 5 Math - % Masters Grade Level Standard
+CA05AMAD317N,Numeric,8,Campus 2017: Grade 5 Math - Number Masters Grade Level Standard
+CA05AMAD017D,Numeric,8,Campus 2017: Grade 5 Math - Number Taking Math Test
+CA05ARED317R,Numeric,8,Campus 2017: Grade 5 Reading - % Masters Grade Level Standard
+CA05ARED317N,Numeric,8,Campus 2017: Grade 5 Reading - Number Masters Grade Level Standard
+CA05ARED017D,Numeric,8,Campus 2017: Grade 5 Reading - Number Taking Reading Test
+CA05ASCD317R,Numeric,8,Campus 2017: Grade 5 Science - % Masters Grade Level Standard
+CA05ASCD317N,Numeric,8,Campus 2017: Grade 5 Science - Number Masters Grade Level Standard
+CA05ASCD017D,Numeric,8,Campus 2017: Grade 5 Science - Number Taking Science Test
+CA06AMAD317R,Numeric,8,Campus 2017: Grade 6 Math - % Masters Grade Level Standard
+CA06AMAD317N,Numeric,8,Campus 2017: Grade 6 Math - Number Masters Grade Level Standard
+CA06AMAD017D,Numeric,8,Campus 2017: Grade 6 Math - Number Taking Math Test
+CA06ARED317R,Numeric,8,Campus 2017: Grade 6 Reading - % Masters Grade Level Standard
+CA06ARED317N,Numeric,8,Campus 2017: Grade 6 Reading - Number Masters Grade Level Standard
+CA06ARED017D,Numeric,8,Campus 2017: Grade 6 Reading - Number Taking Reading Test
+CA07AMAD317R,Numeric,8,Campus 2017: Grade 7 Math - % Masters Grade Level Standard
+CA07AMAD317N,Numeric,8,Campus 2017: Grade 7 Math - Number Masters Grade Level Standard
+CA07AMAD017D,Numeric,8,Campus 2017: Grade 7 Math - Number Taking Math Test
+CA07ARED317R,Numeric,8,Campus 2017: Grade 7 Reading - % Masters Grade Level Standard
+CA07ARED317N,Numeric,8,Campus 2017: Grade 7 Reading - Number Masters Grade Level Standard
+CA07ARED017D,Numeric,8,Campus 2017: Grade 7 Reading - Number Taking Reading Test
+CA07AWRD317R,Numeric,8,Campus 2017: Grade 7 Writing - % Masters Grade Level Standard
+CA07AWRD317N,Numeric,8,Campus 2017: Grade 7 Writing - Number Masters Grade Level Standard
+CA07AWRD017D,Numeric,8,Campus 2017: Grade 7 Writing - Number Taking Writing Test
+CA08AMAD317R,Numeric,8,Campus 2017: Grade 8 Math - % Masters Grade Level Standard
+CA08AMAD317N,Numeric,8,Campus 2017: Grade 8 Math - Number Masters Grade Level Standard
+CA08AMAD017D,Numeric,8,Campus 2017: Grade 8 Math - Number Taking Math Test
+CA08ARED317R,Numeric,8,Campus 2017: Grade 8 Reading - % Masters Grade Level Standard
+CA08ARED317N,Numeric,8,Campus 2017: Grade 8 Reading - Number Masters Grade Level Standard
+CA08ARED017D,Numeric,8,Campus 2017: Grade 8 Reading - Number Taking Reading Test
+CA08ASCD317R,Numeric,8,Campus 2017: Grade 8 Science - % Masters Grade Level Standard
+CA08ASCD317N,Numeric,8,Campus 2017: Grade 8 Science - Number Masters Grade Level Standard
+CA08ASCD017D,Numeric,8,Campus 2017: Grade 8 Science - Number Taking Science Test
+CA08ASSD317R,Numeric,8,Campus 2017: Grade 8 Social Study - % Masters Grade Level Standard
+CA08ASSD317N,Numeric,8,Campus 2017: Grade 8 Social Study - Number Masters Grade Level Standard
+CA08ASSD017D,Numeric,8,Campus 2017: Grade 8 Social Study - Number Taking Social Study Test
+CA00AM02E17N,Numeric,8,Campus 2017: Index 2 Number Exceeded Progress for Mathematics for All Students
+CA00AR02E17N,Numeric,8,Campus 2017: Index 2 Number Exceeded Progress for Reading for All Students
+CA00AM02017D,Numeric,8,Campus 2017: Index 2 Number of Mathematics Tests for All Students
+CA00AR02017D,Numeric,8,Campus 2017: Index 2 Number of Reading Tests for All Students
+CA00AM02E17R,Numeric,8,Campus 2017: Index 2 Percent Exceeded Progress for Mathematics for All Students
+CA00AR02E17R,Numeric,8,Campus 2017: Index 2 Percent Exceeded Progress for Reading for All Students
+GRDTYPE,Character,1,"School Type: E-Elementary, M-Middle, S-Senior, B-Both"
+CFLALTED,Character,1,Campus 2017 Flag - Rated under AEA Procedures (Y/N)
