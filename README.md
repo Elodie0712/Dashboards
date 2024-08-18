@@ -92,7 +92,7 @@ if __name__ == '__main__':
 ![image](https://github.com/user-attachments/assets/8b9236a3-752c-438f-bfbd-97bcf67364f1
 ![image](https://github.com/user-attachments/assets/5902199d-e170-4dc1-ae21-092a467f982c)
 
-#Layout definition
+#Layout definition(front end)
 def layout():
     return dbc.Container([
         html.H1("School District Dashboard"),
@@ -177,123 +177,6 @@ def layout():
             ])
         ])
     ], fluid=True)
-def register_callbacks(app):
-    @app.callback(
-        [
-            Output("Mathg", "figure"),
-            Output("rlag", "figure"),
-            Output("scienceg", "figure"),
-            Output("ssg", "figure"),
-            Output("cgg", "figure"),
-            Output("cg2g", "figure")
-        ],
-        [Input("SD", "value"),
-         Input("SchoolType", "value")]
-    )
-    def update_cards(selected_district, selected_school_type):
-        #Filter DataFrame based on selected district
-        if selected_district == 'All':
-            filtered_df = Data_df3
-        else:
-            filtered_df = Data_df3[Data_df3['DISTNAME'] == selected_district]
-
-        #Further filter by school type
-        if selected_school_type != 'All':
-            filtered_df = filtered_df[filtered_df['GRDTYPE'] == selected_school_type]
-
-        #Calculate the total number of possible points (rows in filtered_df)
-        total_possible_points = filtered_df.shape[0]
-
-        #Check if there are no rows to avoid division by zero
-        if total_possible_points == 0:
-            return (px.pie(names=["N/A"], values=[1], hole=0.5),) * 6
-        
-        #Calculate counts
-        Ma = filtered_df['CAD_MATH'].sum()
-        Rla = filtered_df['CAD_READ'].sum()
-        sc = filtered_df['CAD_SCIE'].sum()
-        ss = filtered_df['CAD_SOCI'].sum()
-        cad = filtered_df['CAD_PROGRESS'].sum()
-        pro = filtered_df['CAD_GAP'].sum()
-        
-        #Create pie charts with percentage representation
-        def create_pie_chart(count, total):
-            return px.pie(
-                names=['Earned', 'Not Earned'],
-                values=[count, total - count],
-                title=f"{count} out of {total} possible points",
-                hole=0.5,
-                labels={'Earned': 'Earned', 'Not Earned': 'Not Earned'},
-                color_discrete_sequence=['red', 'green']
-            ).update_layout(
-                title_text=f"{count/total*100:.1f}%",
-                title_x=0.5,
-                title_y=0.85
-            )
-
-        #Generate pie charts
-        pie_math = create_pie_chart(Ma, total_possible_points)
-        pie_rla = create_pie_chart(Rla, total_possible_points)
-        pie_science = create_pie_chart(sc, total_possible_points)
-        pie_ss = create_pie_chart(ss, total_possible_points)
-        pie_cg = create_pie_chart(cad, total_possible_points)
-        pie_cg2 = create_pie_chart(pro, total_possible_points)
-        
-        return (pie_math, pie_rla, pie_science, pie_ss, pie_cg, pie_cg2)
-
-    @app.callback(
-        Output("Graph1", "figure"),
-        [Input("SD", "value"),
-         Input("SchoolType", "value")]
-    )
-    def update_graphs(selected_district, selected_school_type):
-        #Filter DataFrame based on selected district
-        if selected_district == 'All':
-            filtered_df = Data_df3
-        else:
-            filtered_df = Data_df3[Data_df3['DISTNAME'] == selected_district]
-
-        #Further filter by school type
-        if selected_school_type != 'All':
-            filtered_df = filtered_df[filtered_df['GRDTYPE'] == selected_school_type]
-        
-        #Group by 'C_RATING' and count occurrences
-        rating_counts = filtered_df.groupby('C_RATING').size().reset_index(name='Count')
-        
-        #Define color mapping for each rating
-        color_map = {
-            'A': 'green',
-            'B': 'blue',
-            'C': 'orange',
-            'D': 'purple',
-            'Data Integrity Issues': 'pink',
-            'F': 'red',
-            'Not Rated': 'black'
-        }
-        
-        #Order the categories
-        rating_order = ['A', 'B', 'C', 'D', 'F', 'Data Integrity Issues', 'Not Rated']
-        
-        #Create bar chart
-        fig1 = px.bar(
-            rating_counts,
-            x='C_RATING',
-            y='Count',
-            title='School Rating Count',
-            color='C_RATING',
-            color_discrete_map=color_map,
-            category_orders={'C_RATING': rating_order}
-        )
-        
-        #Update the legend title
-        fig1.update_layout(
-            legend_title_text='School Ratings',
-            title='',
-            xaxis_title='School Rating',
-            yaxis_title=''
-        )
-        
-        return fig1
 
 ### TAB 2
 
