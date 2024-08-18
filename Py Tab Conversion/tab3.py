@@ -181,7 +181,8 @@ sped_me = ['Me_Sped_18','Me_Sped_19']
 sped_ma = ['Ma_Sped_18','Ma_Sped_19']
 
 # Front end layout
-app.layout = dbc.Container([
+def layout():
+    return dbc.Container([
     html.H1("School District Dashboard"),
     dcc.Tabs([
         dcc.Tab(label='3rd Grade RLA Special Populations', children=[
@@ -343,47 +344,54 @@ def generate_bar_graph(averages, title):
     )
     
     return fig
-
-@app.callback(
-    [Output("FMAG", "figure"),
-     Output("FMMG", "figure"),
-     Output("FMMAG", "figure"),
-     Output("RAG", "figure"),
-     Output("RAMG", "figure"),
-     Output("RMAG", "figure")],
-    [Input("SD", "value"),
-     Input("SchoolType", "value")]
-)
-def update_cards(selected_district, selected_school_type):
-    if selected_district == 'All':
-        filtered_df = merge_df
-    else:
-        filtered_df = merge_df[merge_df['DISTNAME'] == selected_district]
-
-    if selected_school_type != 'All':
-        filtered_df = filtered_df[filtered_df['GRDTYPE'] == selected_school_type]
-
-    print("Filtered DataFrame shape:", filtered_df.shape)  # Debugging print
-
-    if filtered_df.empty:
-        print("No data available for the selected filters.")
-
-    fmag_averages = calculate_averages(filtered_df, el_app)
-    fmmg_averages = calculate_averages(filtered_df, el_meets)
-    fmmag_averages = calculate_averages(filtered_df, el_ma)
-    rag_averages = calculate_averages(filtered_df, sped_app)
-    ramg_averages = calculate_averages(filtered_df, sped_me)
-    raag_averages = calculate_averages(filtered_df, sped_ma)
-
-    return (
-        generate_bar_graph(fmag_averages, 'Approaches'),
-        generate_bar_graph(fmmg_averages, 'Meets'),
-        generate_bar_graph(fmmag_averages, 'Masters'),
-        generate_bar_graph(rag_averages, 'Approaches'),
-        generate_bar_graph(ramg_averages, 'Meets'),
-        generate_bar_graph(raag_averages, 'Masters')
+def register_callbacks3(app):
+    @app.callback(
+        [Output("FMAG", "figure"),
+         Output("FMMG", "figure"),
+         Output("FMMAG", "figure"),
+         Output("RAG", "figure"),
+         Output("RAMG", "figure"),
+         Output("RMAG", "figure")],
+        [Input("SD", "value"),
+         Input("SchoolType", "value")]
     )
+    def update_cards(selected_district, selected_school_type):
+        # Filtering the DataFrame based on the selected values
+        if selected_district == 'All':
+            filtered_df = merge_df
+        else:
+            filtered_df = merge_df[merge_df['DISTNAME'] == selected_district]
 
-# Run the app
-if __name__ == '__main__':
-    app.run_server(debug=True, port=8070)
+        if selected_school_type != 'All':
+            filtered_df = filtered_df[filtered_df['GRDTYPE'] == selected_school_type]
+
+        print("Filtered DataFrame shape:", filtered_df.shape)  # Debugging print
+
+        if filtered_df.empty:
+            print("No data available for the selected filters.")
+            return (
+                generate_bar_graph([], 'Approaches'),
+                generate_bar_graph([], 'Meets'),
+                generate_bar_graph([], 'Masters'),
+                generate_bar_graph([], 'Approaches'),
+                generate_bar_graph([], 'Meets'),
+                generate_bar_graph([], 'Masters')
+            )
+
+        # Calculating averages for each category
+        fmag_averages = calculate_averages(filtered_df, el_app)
+        fmmg_averages = calculate_averages(filtered_df, el_meets)
+        fmmag_averages = calculate_averages(filtered_df, el_ma)
+        rag_averages = calculate_averages(filtered_df, sped_app)
+        ramg_averages = calculate_averages(filtered_df, sped_me)
+        raag_averages = calculate_averages(filtered_df, sped_ma)
+
+        # Generating figures for each output
+        return (
+            generate_bar_graph(fmag_averages, 'Approaches'),
+            generate_bar_graph(fmmg_averages, 'Meets'),
+            generate_bar_graph(fmmag_averages, 'Masters'),
+            generate_bar_graph(rag_averages, 'Approaches'),
+            generate_bar_graph(ramg_averages, 'Meets'),
+            generate_bar_graph(raag_averages, 'Masters')
+        )
