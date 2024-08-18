@@ -48,7 +48,6 @@ I started with Jupyter notebook but soon realized that using Python would make i
 Here is an overview:
 
 ## All Tabs
-## Table of Contents
 - **[Combined tabs](#tab-1)**
 - **[Tab 1](#tab-1)**
 - **[Tab 2](#tab-2)**
@@ -91,92 +90,6 @@ if __name__ == '__main__':
 ![image](https://github.com/user-attachments/assets/7fa0b4dc-8dac-4480-bdba-df994021b146)
 ![image](https://github.com/user-attachments/assets/8b9236a3-752c-438f-bfbd-97bcf67364f1
 ![image](https://github.com/user-attachments/assets/5902199d-e170-4dc1-ae21-092a467f982c)
-
-#Layout definition(front end)
-def layout():
-    return dbc.Container([
-        html.H1("School District Dashboard"),
-
-        dcc.Tabs([
-            dcc.Tab(label='Academic Achievement & Ratings', children=[
-                dbc.Container([
-                    dbc.Row([
-                        dbc.Col(dcc.Dropdown(
-                            id="SD",
-                            options=[{'label': 'All DISTRICTS', 'value': 'All'}] +
-                                    [{'label': district, 'value': district} for district in Data_df3['DISTNAME'].unique()],
-                            style={'color': 'black'},
-                            value='All'  # Default value
-                        ), width=6),
-
-                        dbc.Col(dcc.RadioItems(
-                            id='SchoolType',
-                            options=[
-                                {'label': 'Elementary', 'value': 'E'},
-                                {'label': 'Middle', 'value': 'M'},
-                                {'label': 'High', 'value': 'S'},
-                                {'label': 'Charter', 'value': 'B'},
-                                {'label': 'All', 'value': 'All'}
-                            ],
-                            value='All'  # Default value
-                        ), width=6),
-                    ], className='mb-4'),
-
-                    dbc.Row([
-                        dbc.Col([
-                            html.H3("Academic Achievement in Mathematics", style={'textAlign': 'center'}),
-                            dcc.Graph(id='Mathg', style={'width': '400px', 'height': '400px'}),
-                            html.P(id='Math', style={'textAlign': 'center'})
-                        ], width=4, className='mb-4'),
-
-                        dbc.Col([
-                            html.H3("Academic Achievement in English Language Arts/Reading", style={'textAlign': 'center'}),
-                            dcc.Graph(id='rlag', style={'width': '400px', 'height': '400px'}),
-                            html.P(id='rla', style={'textAlign': 'center'})
-                        ], width=4, className='mb-4'),
-
-                        dbc.Col([
-                            html.H3("Academic Achievement in Science", style={'textAlign': 'center'}),
-                            html.Br(),
-                            html.Div(style={'height': '0.5em'}),
-                            dcc.Graph(id='scienceg', style={'width': '400px', 'height': '400px'}),
-                            html.P(id='science', style={'textAlign': 'center'})
-                        ], width=4, className='mb-4'),
-                    ]),
-
-                    dbc.Row([
-                        dbc.Col([
-                            html.H3("Academic Achievement in Social Studies", style={'textAlign': 'center'}),
-                            dcc.Graph(id='ssg', style={'width': '400px', 'height': '400px'}),
-                            html.P(id='ss', style={'textAlign': 'center'})
-                        ], width=4, className='mb-4'),
-
-                        dbc.Col([
-                            html.H3("Top 25 Percent: Comparative Academic Growth", style={'textAlign': 'center'}),
-                            dcc.Graph(id='cgg', style={'width': '400px', 'height': '400px'}),
-                            html.P(id='cg', style={'textAlign': 'center'})
-                        ], width=4, className='mb-4'),
-
-                        dbc.Col([
-                            html.H3("Top 25 Percent: Comparative Closing the Gaps", style={'textAlign': 'center'}),
-                            dcc.Graph(id='cg2g', style={'width': '400px', 'height': '400px'}),
-                            html.P(id='cg2', style={'textAlign': 'center'})
-                        ], width=4, className='mb-4'),
-                    ]),
-
-                    html.H2("SCHOOL RATINGS", style={'textAlign': 'center', 'marginTop': '40px'}),
-                    dcc.Graph(id='Graph1', style={'height': '600px'}),
-                ], fluid=True)
-            ]),
-
-            dcc.Tab(label='Different Dashboard', children=[
-                html.Div([
-                    html.H2("Student Performance", style={'textAlign': 'center'}),
-                  
-                ])
-            ])
-        ])
-    ], fluid=True)
 
 ### TAB 2
 
