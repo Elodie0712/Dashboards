@@ -6,7 +6,7 @@ In this project, I created a dashboard to highlight 2017-2019 student performanc
 
 ## Power BI
 
-_Disclaimer: I do not have the appropriate credentials to export the dashboards for users to manipulate._
+_https://app.powerbi.com/groups/me/reports/a7857a3d-87ef-4a40-8c13-04f277b034dc/ReportSection?experience=power-bi_
 
 ### Dashboard Sections
 
