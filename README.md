@@ -1,8 +1,8 @@
-# TEA DASHBOARD IDEAS
+# EDUCATION DASHBOARD IDEAS
+![image](https://github.com/user-attachments/assets/4bfd7801-3f53-443c-b2df-26fe6e1dc7d1)
 
-![image](https://github.com/user-attachments/assets/256c2394-89b5-407d-a393-0a2780adf6be)
 
-In this project, I created a dashboard to highlight 2017-2019 student performances using POWER BI and Dash.
+In this project, I created a dashboard to highlight 2017-2019 student performances using POWER BI and Dash.Please note that the dataset could've been missing data.
 
 ## Power BI
 
